@@ -1,0 +1,28 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  background-color: gray;
+}
+.center{
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
+}
+.center .title{
+  color: #0e1001bf;
+  font-size: 40px;
+  font-weight: 600;
+}
+.center .sub_title{
+  color: #8221d2;
+  font-size: 38px;
+  font-weight: 600;
+}

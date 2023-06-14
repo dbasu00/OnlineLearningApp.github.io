@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Show</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<style>
+    input[type=text] {
+  text-align:centre;
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 3px;
+  margin-left:30%;
+  box-sizing: border-box;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-left: 40%;
+}
+body{
+	background-color: coral;
+}
+h1{
+margin-left: 100px;
+}
+
+table{
+margin-left: 50px;
+}
+td, th {
+  border: 2px solid #141313;
+  text-align: left;
+  padding: 8px;
+}
+
+</style>
+
+
+</head>
+<body>
+<section class="gradient-custom">
+        <div class="container py-5 h-100">
+          <div class="row justify-content-center align-items-center h-100">
+            <div class="col-12 col-lg-9 col-xl-7">
+              <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+                <div class="card-body p-4 p-md-5">
+                  
+  
+<h1 class="mb-4 pb-2 pb-md-0 mb-md-5">COURSE DETAILS</h1>
+
+	<table border="1">
+        <tr> 
+           <th>Course_Id</th>
+           <th>Corse_Name</th>
+           <th>Course_Price</th>
+          
+         </tr>
+         <tr th:each="course:${courses}">
+           <td th:text="${course.courseId}"/>
+           <td th:text="${course.courseName}"/>
+           <td th:text="${course.coursePrice}"/>
+         </tr>
+      </table>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </section>
+</body>
+</html>
